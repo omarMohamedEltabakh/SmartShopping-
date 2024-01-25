@@ -1,0 +1,130 @@
+nav .navItems .navItem,
+.logo,
+nav .signIn {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    background-color: var(--secondColor);
+    border-bottom: 1px solid rgb(191, 188, 188);
+    z-index: 999999999 !important;
+    transition: .3s all ease-in !important;
+
+}
+
+.dark nav {
+    border-bottom: 1px solid gray;
+}
+
+nav .navItems .navItem {
+    padding-left: 40px;
+}
+
+nav .themeIcon .switcher {
+    width: 23px;
+    aspect-ratio: 1/1;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    
+    
+}
+.transition{
+    transition: right 3s ease !important;
+
+}
+
+nav .themeIcon {
+    border: 1px solid var(--mainColor);
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    
+    height: fit-content;
+
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+nav .active {
+    color: var(--mainColor) !important;
+    transition: all .3s ease-in;
+}
+
+nav .allProducts div {
+    background-color: var(--secondColor);
+}
+
+nav .allProducts:hover .allProductMeun {
+    transition: .3s all ease-in !important;
+    display: flex !important;
+    z-index: 9999999;
+}
+
+
+
+nav .languages .languagesMenu {
+    background-color: var(--secondColor);
+}
+
+nav .languages:hover .languagesMenu {
+    display: flex !important;
+}
+
+nav .navCart {
+    color: red !important;
+}
+
+.dark nav .modal-content {
+    color: white;
+    background-color: var(--secondColor) !important;
+}
+
+
+nav .cartAndFavorite .cartCount {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondColor);
+    border: var(--mainColor) 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+
+}
+
+nav .cartAndFavorite .cartCount h6{
+    font-size: 14px !important;
+}
+
+
+
+
+
+
+
+@media(max-width:1000px) {
+
+    nav .navItems,
+    nav .cartAndFavorite {
+        display: none !important;
+    }
+
+    nav {
+        padding: 20px 0px;
+    }
+
+    nav .navBarMenu {
+        display: block !important;
+    }
+}

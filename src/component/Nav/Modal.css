@@ -1,0 +1,20 @@
+
+.dark .modal .allProductMeun{
+    background-color: #2f2f2f !important;
+    color: #ffffff !important;
+    
+}
+.modal .allProductMeun li a {
+    background-color: inherit !important;
+}
+.modal .allProductMeun{
+    background-color: white !important;
+    color: black !important;
+}
+
+@media(max-width:576px){
+    .modal .modal-content{
+        width: 70% !important;
+        margin: auto;
+    }
+}

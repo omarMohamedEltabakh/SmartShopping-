@@ -1,0 +1,52 @@
+.VerfiyCode {
+    height: 100vh;
+    background-color: var(--secondColor);
+    padding-top: 120px !important;
+    transition: .3s all ease-in !important;
+
+
+}
+
+.VerfiyCode form {
+    padding: 60px 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.VerfiyCode form button {
+    border: 1px solid var(--mainColor);
+    border-radius: 6px;
+    padding: 7px 18px;
+    margin-top: 30px;
+    background-color: var(--secondColor);
+    transition: .2s ease-in transform;
+}
+
+.VerfiyCode form button:hover {
+    transform: translateY(3px);
+}
+
+.VerfiyCode form input:focus {
+    border: none;
+    box-shadow: 0px 0px 6px 1px var(--mainColor) !important;
+}
+
+.dark .VerfiyCode form input:focus {
+    border: none;
+    box-shadow: 0px 0px 6px 5px var(--mainColor) !important;
+}
+
+.dark .VerfiyCode form button {
+    color: white !important;
+    box-shadow: 0px 0px 10px 0px var(--mainColor) !important;
+}
+
+.dark .VerfiyCode form {
+    border: solid 1px var(--mainColor);
+}
+
+@media(max-width:900px) {
+    .VerfiyCode form {
+        width: 70% !important;
+    }
+}

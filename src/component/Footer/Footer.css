@@ -1,0 +1,5 @@
+.dark footer{
+   border-top: solid 1px #808080;;
+   background-color: var(--secondColor);
+   transition: .3s all ease-in !important;
+}

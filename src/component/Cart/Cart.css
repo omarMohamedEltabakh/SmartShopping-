@@ -1,0 +1,41 @@
+ .cart .offcanvas {
+     background-color: var(--secondColor) !important;
+     color: var(--color) !important;
+    transition: .3s all ease-in !important;
+
+ }
+
+ 
+ .cart .btnDelete {
+     transition: .3s ease-in all;
+ }
+
+ .cart .btnDelete:hover {
+     transform: translateY(-4px);
+ }
+
+ .cart .incAndDecProduct>div button {
+     color: var(--color);
+     border: var(--mainColor) 1px solid !important;
+ }
+
+ .cart img:hover {
+     transform: scale(1.07);
+ }
+
+ .cart img {
+     transition: .3s transform ease-in;
+ }
+ .cart .checkOut{
+    all: unset;
+    padding: 7px 15px;
+    background-color: var(--secondColor);
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in transform;
+ }
+
+ .cart .checkOut:hover{
+    transform: translateY(-4px);
+ }

@@ -1,0 +1,50 @@
+/* project font============================================> */
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* light mode and dark mode==================================> */
+.light {
+    --mainColor: #fb7185;
+    --secondColor: #f0f1f3;
+    /* light gray */
+    color: black;
+}
+
+
+.mainColor {
+    color: #fb7185 !important;
+}
+
+.dark {
+    --mainColor: #fb7185;
+    --secondColor: #252529;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.star {
+    color: #ffc908;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+.red {
+    color: red;
+}
+
+.NotFound {
+    background-color: var(--secondColor);
+    transition: .3s ease-in all !important;
+}

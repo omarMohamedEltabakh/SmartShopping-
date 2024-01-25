@@ -1,0 +1,37 @@
+{
+    "title": "تسجيل الدخول",
+    "home": "الصفحة الرئيسية",
+    "products": "المنتاجات",
+    "sale": "العروض",
+    "WomenClothing": "ملابس نسائية",
+    "menClothing": "ملابس رجالية",
+    "ElectronicDevices": "أجهزه الكترونية",
+    "signIn": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signOut":"تسجيل الخروج",
+    "shopWithUs":"تسوق معنا",
+    "shoppingCart":"عربة التسوق",
+    "Favorite":"المفضلة",
+    "ForgotYourPassword":"هل نسيت كلمة المرور ؟",
+    "signUp":"إنشاء حساب جديد",
+    "name":"الإسم",
+    "rePassword":"إعادة كلمة المرور",
+    "phone":"رقم الهاتف",
+    "addToCart":"أضف الي العربه",
+    "Remove":"إذالة",
+    "AddedToFavorite":"تمت الاضافة الي المفضلة",
+    "AddedToCart":"تم الإضافة الي العربة",
+    "productDeleted":"تمت الإزالة من المفضلة",
+    "productDeletedFromCart":"تمت الإزالة من العربة",
+    "CheckOut":"الدفع",
+    "city":"المدينة",
+    "verify":"تأكيد",
+    "EnterYourEmail":"أدخل عنوان البريد الإلكتروني",
+    "TotalPrice":"السعر المجمل  ",
+    "Code":"أدخل الكود",
+    "RePassword":"أدخل كلمة السر الجديدة"
+
+
+
+}
