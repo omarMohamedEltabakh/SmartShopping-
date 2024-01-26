@@ -23,7 +23,7 @@ nav .navItems .navItem {
 }
 
 nav .themeIcon .switcher {
-    width: 23px;
+    width: 47%;
     aspect-ratio: 1/1;
     background-color: var(--mainColor);
     border-radius: 50%;
@@ -123,6 +123,7 @@ nav .cartAndFavorite .cartCount h6{
     nav {
         padding: 20px 0px;
     }
+   
 
     nav .navBarMenu {
         display: block !important;
@@ -133,6 +134,7 @@ nav .cartAndFavorite .cartCount h6{
  nav .colum-1 , nav .colum-3{
     font-size: 13px !important;
  }
+
  nav .colum-1 .logo 
  {
     margin: 0 !important;
