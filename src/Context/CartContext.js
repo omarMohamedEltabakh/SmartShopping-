@@ -57,7 +57,7 @@ const CartContextProvider = (props) => {
     const [numberOfCartProduct, setNumberOfCartProduct] = useState(null)
 
     const numberOfCartItem = async () => {
-        
+
         const { data } = await getCartItems();
         setNumberOfCartProduct(data?.numOfCartItems);
     }
@@ -71,10 +71,10 @@ const CartContextProvider = (props) => {
 
 
     // checkOut ============================================>
-    const PayNow = (id,shippingAddress) => {
-        return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}?url=http://localhost:3000`,{
+    const PayNow = (id, shippingAddress) => {
+        return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}?url=https://smart-shopping-git-master-omar-mohameds-projects.vercel.app/`, {
             shippingAddress
-        },{
+        }, {
             headers
         });
 
@@ -88,9 +88,9 @@ const CartContextProvider = (props) => {
     //     },{
     //         headers
     //     })
-      
+
     // }
-    
+
 
     // call api
     useEffect(() => {
@@ -108,8 +108,10 @@ const CartContextProvider = (props) => {
 
 
 
-    return <cartContext.Provider value={{ addToCart, getCartItems, DeleteCartItem, UpdateCartProductQuantity, 
-    numberOfCartItem, numberOfCartProduct, cartItemIds, getIdFromCart,PayNow }}>
+    return <cartContext.Provider value={{
+        addToCart, getCartItems, DeleteCartItem, UpdateCartProductQuantity,
+        numberOfCartItem, numberOfCartProduct, cartItemIds, getIdFromCart, PayNow
+    }}>
         {props.children}
     </cartContext.Provider>
 }

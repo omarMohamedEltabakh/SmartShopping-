@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import "./CheckOut.css"
 import { useTranslation } from "react-i18next";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { cartContext } from "../../Context/CartContext";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -13,14 +13,17 @@ const CheckOut = () => {
   const { t } = useTranslation()
   const { PayNow } = useContext(cartContext)
   let { id } = useParams();
+  const [check, setcheck] = useState(false)
 
 
   // checkOutSumbit==============================>
   const checkOutSumbit = async (values) => {
+    setcheck(true)
     const { data } = await PayNow(id, values);
     console.log(data);
 
     if (data.status === "success") {
+      setcheck(false)
       window.location.href = data.session.url;
     }
 
@@ -54,7 +57,13 @@ const CheckOut = () => {
         <label className="fw-semibold mt-4" htmlFor="city">{t("city")}</label>
         <input className="form-control mt-2" value={formik.values.city} onChange={formik.handleChange} onBlur={formik.handleBlur} id="city" type="text" name="city" />
 
-        <button type="submit" disabled={!(formik.dirty && formik.isValid)} className="shadow">Pay Now</button>
+        {check === true ? <button type="submit" disabled={!(formik.dirty && formik.isValid)} className="signInBtn  shadow  py-2 disabled mt-4 mb-1 ">
+          Loading...
+          <span className="spinner-border spinner-border-sm fs" aria-hidden="true"></span>
+        </button> :
+          <button type="submit" disabled={!(formik.dirty && formik.isValid)} className="shadow">Pay Now</button>
+
+        }
       </form>
 
     </section>

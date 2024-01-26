@@ -128,3 +128,13 @@ nav .cartAndFavorite .cartCount h6{
         display: block !important;
     }
 }
+@media(max-width:390px) {
+
+ nav .colum-1 , nav .colum-3{
+    font-size: 13px !important;
+ }
+ nav .colum-1 .logo 
+ {
+    margin: 0 !important;
+ }
+}

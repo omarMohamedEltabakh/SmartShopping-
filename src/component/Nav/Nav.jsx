@@ -57,7 +57,7 @@ const Nav = () => {
 
 
         {/* col1===============================================================> */}
-        <div className="    d-flex align-items-center ">
+        <div className="    d-flex align-items-center colum-1  ">
 
           <Link to={"/"} className="logo me-5  ">{t("shopWithUs")}</Link>
 
@@ -127,7 +127,7 @@ const Nav = () => {
 
         {/* col3===============================================================> */}
         {/* languageToggle===========================================> */}
-        <div className="d-flex align-items-center     justify-content-end     ">
+        <div className="d-flex align-items-center     justify-content-end colum-3     ">
 
 
           <p onClick={() => { i18n.changeLanguage(language === "ar" ? "en" : "ar"); localStorage.setItem("language", language === "ar" ? "en" : "ar"); setlanguage(localStorage.getItem("language")) }} className="m-0 pe-3 cursor-pointer text-uppercase">{language === "ar" ? "en" : "ar"}</p>
