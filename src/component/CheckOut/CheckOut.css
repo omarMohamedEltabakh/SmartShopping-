@@ -32,3 +32,17 @@
 .dark .checkOut form button{
     color: white;
 }
+
+@media (max-width:800px){
+    .checkOut form {
+        width: 75% !important;
+        
+    }
+}
+@media (max-width:340px) {
+    
+    .checkOut form {
+        width: 90% !important;
+        
+    }
+}
