@@ -100,9 +100,10 @@ const SignIn = () => {
       </div>
 
     </section>
+
     <Helmet>
-    <title>SignIn</title>
-  </Helmet>
+      <title>SignIn</title>
+    </Helmet>
 
   </>
 

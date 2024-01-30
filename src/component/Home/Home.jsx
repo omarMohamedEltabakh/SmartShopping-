@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 import { wishListContext } from "../../Context/WishListContext";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
-
+import Alert from "../Alert/Alert";
 
 
 
@@ -73,7 +73,6 @@ const Home = () => {
 
 
   return <>
-
     <section className="home pb-5">
 
       <HomeSlider />
@@ -136,6 +135,7 @@ const Home = () => {
       <title>Home</title>
     </Helmet>
     <Footer />
+    <Alert />
   </>
 
 }

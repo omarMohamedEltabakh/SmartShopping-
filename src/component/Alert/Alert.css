@@ -1,0 +1,39 @@
+.alertModal .modal-content{
+    background-color: var(--secondColor);
+}
+
+.alertModal button{
+    border: var(--mainColor) 1px solid;
+    background-color: var(--secondColor);
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: .3s all ease-in;
+    
+}
+.alertModal button:hover{
+    transform: translateY(5px);
+}
+.dark .alertModal button {
+    box-shadow: 0px 0px 5px 0px var(--mainColor) !important;
+    color: white !important;
+    
+}
+.dark .alertModal .modal-content {
+    border: var(--mainColor) 1px solid;
+
+}
+.alertModal h6{
+    line-height: 160%;
+}
+
+@media (max-width:540px) {
+    
+    .alertModal .modal-content button{
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    .alertModal .modal-content h6 , .alertModal .modal-header h1,.alertModal .modal-header i{
+        font-size: 14px !important;
+    }
+}
+

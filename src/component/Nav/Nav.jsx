@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./Nav.css"
 import { useContext, useEffect, useState } from "react";
@@ -51,6 +52,7 @@ const Nav = () => {
 
 
   return <>
+
     <nav className="fw-semibold shadow fixed-top">
 
       <div className="container d-flex justify-content-between mx-auto  ">
@@ -103,9 +105,9 @@ const Nav = () => {
         {/* navItems==================================================> */}
         <div dir={`${language === "ar" ? "rtl" : "ltr"}`} className="navItems      justify-content-center  d-flex align-items-center  position-relative  ">
           <NavLink exact="true" activeclassname="active" className={`navItem py-4  ${language === "en" ? "ps-0" : ""}`} to={"/"}>{t("home")}</NavLink>
-
+         
           <div className=" allProducts ">
-            <a className="py-4 navItem cursor-pointer  d-flex justify-content-center "  >{t("products")}</a>
+            <a className="py-4 navItem cursor-pointer  d-flex justify-content-center " href="" >{t("products")}</a>
 
             <div className=" position-absolute  animate__animated allProductMeun cursor-pointer  px-3    rounded-1 d-none shadow py-3 d-flex flex-column align-items-center">
               <NavLink activeclassname="active" to={"menClothing"} >{t("menClothing")}</NavLink>

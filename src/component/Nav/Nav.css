@@ -32,10 +32,7 @@ nav .themeIcon .switcher {
     
     
 }
-.transition{
-    transition: right 3s ease !important;
 
-}
 
 nav .themeIcon {
     border: 1px solid var(--mainColor);
@@ -58,7 +55,7 @@ nav .themeIcon {
 
 nav .active {
     color: var(--mainColor) !important;
-    transition: all .3s ease-in;
+    transition: color .3s ease-in;
 }
 
 nav .allProducts div {
