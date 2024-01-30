@@ -62,15 +62,7 @@ const Home = () => {
 
 
   }
-
-  // helmet====================================>
-
-
-
-  // ...
-
-
-
+ 
 
   return <>
     <section className="home pb-5">

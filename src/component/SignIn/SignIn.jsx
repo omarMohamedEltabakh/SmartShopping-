@@ -39,6 +39,7 @@ const SignIn = () => {
       setcheck("true")
       localStorage.setItem("token", data.token)
       navigate('/')
+      window.location.reload();
 
     }
   }
